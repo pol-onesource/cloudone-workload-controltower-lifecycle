@@ -249,11 +249,12 @@ Resources:
       Description: Capture Control Tower LifeCycle Events and Trigger an Action
       EventPattern:
         detail:
+          serviceEventDetails:
+            createManagedAccountStatus:
+              state:
+              - SUCCEEDED
           eventName:
           - CreateManagedAccount
-          - UpdateManagedAccount
-          eventSource:
-          - controltower.amazonaws.com
         detail-type:
         - AWS Service Event via CloudTrail
         source:
