@@ -73,6 +73,7 @@ policy_document = {
         "Version": "2012-10-17",
         "Statement": [
             {
+                "Sid": "cloudconnector",
                 "Effect": "Allow",
                 "Action": [
                     "ec2:DescribeLicenses",
